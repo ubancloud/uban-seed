@@ -3,9 +3,9 @@ import App from './App.vue'
 import ConfigAxios from "@/config/config.axios";
 import ConfigDefault from "@/config/config.default";
 import ConfigUrl from "@/config/config.url";
-import ClapVueCore from "@clapjs/vue-core";
+import UbanVue from "@ubancloud/vue";
 
-Vue.use(ClapVueCore,{...ConfigDefault,axios:ConfigAxios,url:ConfigUrl})
+Vue.use(UbanVue,{...ConfigDefault,axios:ConfigAxios,url:ConfigUrl})
 
 import i18n from "@/lib/i18n";
 import router from "@/lib/router";

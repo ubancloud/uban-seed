@@ -5,8 +5,8 @@ import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import installExtension, { VUEJS_DEVTOOLS } from 'electron-devtools-installer'
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
-import clap from "./background/clap";
-import clap_update from "./background/clap_update";
+import clap from "./background/uban";
+import clap_update from "./background/uban_update";
 
 // Scheme must be registered before the app is ready
 protocol.registerSchemesAsPrivileged([
