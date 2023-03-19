@@ -1,3 +1,3 @@
-import i18n from '@clapjs/vue-core/lib/i18n'
+import i18n from '@ubancloud/vue/lib/i18n'
 
 export default i18n

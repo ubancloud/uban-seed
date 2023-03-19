@@ -1,4 +1,4 @@
-import enUS from '@clapjs/vue-core/lib/i18n/lang/en-US'
+import enUS from '@ubancloud/vue/lib/i18n/lang/en-US'
 
 const locale = {
 

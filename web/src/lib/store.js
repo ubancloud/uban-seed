@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import {app, user, getters} from '@clapjs/vue-core/lib/store'
+import {app, user, getters} from '@ubancloud/vue/lib/store'
 import clap from './store/clap'
 
 Vue.use(Vuex);

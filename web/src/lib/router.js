@@ -1,14 +1,14 @@
 import Vue from 'vue'
-import router from '@clapjs/vue-core/lib/router'
+import router from '@ubancloud/vue/lib/router'
 import NProgress from 'nprogress'
 
 const checkLogin=()=>{
     return (process.env.IS_ELECTRON?Vue.ls:Vue.$cookies).get('ACCESS_TOKEN')!==null
 }
 
-router.addRoute({path: '/login', name: 'login', component: ()=>import('@clapjs/vue-core/views/authority/login'),})
-router.addRoute({path: '/', name: 'index', component: ()=>import('@clapjs/vue-core/components/CLayout'), redirect: () => {return 'dash'}})
-router.addRoute('index',{path: '/dash', name: 'dash', component: ()=>import('@clapjs/vue-core/views/uban/dash')})
+router.addRoute({path: '/login', name: 'login', component: ()=>import('@ubancloud/vue/views/authority/login'),})
+router.addRoute({path: '/', name: 'index', component: ()=>import('@ubancloud/vue/components/CLayout'), redirect: () => {return 'dash'}})
+router.addRoute('index',{path: '/dash', name: 'dash', component: ()=>import('@ubancloud/vue/views/uban/dash')})
 
 router.loadDynamicRoutes=async (application)=>{
     if(!checkLogin()){
@@ -21,7 +21,7 @@ router.loadDynamicRoutes=async (application)=>{
             router.getRoutes().filter(item=>item.name===route.routeName).length<1&& router.addRoute('index',{
                 name: route.routeName,
                 path: route.routePath,
-                component: () => route.resolveType==='LocalPkg'?import('@/'+route.resolvePath):import('@clapjs/vue-core/'+route.resolvePath),
+                component: () => route.resolveType==='LocalPkg'?import('@/'+route.resolvePath):import('@ubancloud/vue/'+route.resolvePath),
                 meta
             });
         }

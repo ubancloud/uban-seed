@@ -1,4 +1,4 @@
-import zhCN from '@clapjs/vue-core/lib/i18n/lang/zh-CN'
+import zhCN from '@ubancloud/vue/lib/i18n/lang/zh-CN'
 
 const locale = {
 
