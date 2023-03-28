@@ -6,7 +6,7 @@ module.exports = appInfo => {
       default: {
         singleton: 'model', // models in `app/${singleton}`
         singletonSrc: [ 'core/model' ],
-        url: 'mongodb://121.42.8.134/6305a9d0e60f46789fde8976',
+        url: 'mongodb://121.42.8.134/63370763b07ceb6fd918bd94',
         options: {
           user: 'test',
           pass: 'test',

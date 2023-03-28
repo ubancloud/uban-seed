@@ -7,14 +7,14 @@ const checkLogin=()=>{
 }
 
 router.addRoute({path: '/login', name: 'login', component: ()=>import('@ubancloud/vue/views/authority/login'),})
-router.addRoute({path: '/', name: 'index', component: ()=>import('@ubancloud/vue/components/CLayout'), redirect: () => {return 'dash'}})
+router.addRoute({path: '/', name: 'index', component: ()=>import('@ubancloud/vue/components/ULayout'), redirect: () => {return 'dash'}})
 router.addRoute('index',{path: '/dash', name: 'dash', component: ()=>import('@ubancloud/vue/views/uban/dash')})
 
 router.loadDynamicRoutes=async (application)=>{
     if(!checkLogin()){
         return;
     }
-    const routes=(await Vue.prototype.$clap.http.get('/clap/authority/menu',{params:{application}})).data.records;
+    const routes=(await Vue.prototype.$uban.http.get('/uban/authority/menu',{params:{application}})).data.records;
     for (let route of routes) {
         if (route.type==='MWR') {
             let meta = route.meta ? JSON.parse(route.meta) : {};

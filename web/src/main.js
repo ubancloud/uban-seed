@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import '@/global.less'
 import ConfigAxios from "@/config/config.axios";
 import ConfigDefault from "@/config/config.default";
 import ConfigUrl from "@/config/config.url";

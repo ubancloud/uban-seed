@@ -21,12 +21,12 @@ const clap = {
         },
         ToggleApplication({ commit }, application) {
             return new Promise((resolve, reject) => {
-                commit('TOGGLE_APPLICATION', application)
                 router.loadDynamicRoutes(application).then(() => {
                     resolve()
                 }).catch(e => {
                     reject(e)
                 })
+                commit('TOGGLE_APPLICATION', application)
             })
         },
     }

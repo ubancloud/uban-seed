@@ -1,5 +1,5 @@
 <template>
-
+     <u-page></u-page>
 </template>
 
 <script>

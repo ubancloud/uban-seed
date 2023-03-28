@@ -45,7 +45,7 @@ module.exports = {
             less: {
                 modifyVars: {
                     'font-size-base': '12px',
-                    'text-color': 'rgba(0, 0, 0, 1)'
+                    'text-color': 'rgba(0, 0, 0, 1)',
                 },
                 javascriptEnabled: true
             }

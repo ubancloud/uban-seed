@@ -13,16 +13,14 @@
   },
   "main": "background.js",
   "dependencies": {
-    "@ubancloud/vue": "file:../../uban-vue",
-    "core-js": "^3.6.5",
-    "electron-updater": "^5.2.1",
-
-
     "@icon-park/vue": "^1.4.2",
+    "@ubancloud/vue": "file:../../uban-vue",
     "@wangeditor/editor": "^5.0.0",
     "@wangeditor/editor-for-vue": "^1.0.0",
     "ant-design-vue": "^1.7.8",
     "axios": "^0.27.2",
+    "core-js": "^3.6.5",
+    "electron-updater": "^5.2.1",
     "js-beautify": "^1.14.0",
     "moment": "^2.27.0",
     "nprogress": "^0.2.0",
