@@ -14,5 +14,6 @@ import store from "@/lib/store";
 import bootstrap from './bootstrap'
 
 Vue.config.productionTip = false;
+Vue.prototype.$store = store;
 
 new Vue({router, store, i18n, created: bootstrap, render: h => h(App)}).$mount('#app');
