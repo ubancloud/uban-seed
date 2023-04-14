@@ -21,7 +21,7 @@ router.loadDynamicRoutes=async (application)=>{
             router.getRoutes().filter(item=>item.name===route.routeName).length<1&& router.addRoute('index',{
                 name: route.routeName,
                 path: route.routePath,
-                component: () => route.resolveType==='LocalPkg'?import('@/'+route.resolvePath):import('@ubancloud/vue/'+route.resolvePath),
+                component: () => route.resolveType==='LocalPkg'?import('@/'+route.resolvePath):import('@ubancloud'+'/'+route.resolvePkg+'/'+route.resolvePath),
                 meta
             });
         }
