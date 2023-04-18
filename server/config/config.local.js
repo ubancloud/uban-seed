@@ -5,11 +5,10 @@ module.exports = appInfo => {
     clients: {
       default: {
         singleton: 'model', // models in `app/${singleton}`
-        singletonSrc: [ 'core/model' ],
-        url: 'mongodb://121.42.8.134/63370763b07ceb6fd918bd94',
+        url: 'mongodb://121.42.8.134/develop-18857926522-yby',
         options: {
-          user: 'test',
-          pass: 'test',
+          user: 'uban',
+          pass: 'Uban@2023',
           useUnifiedTopology: true,
         },
         framework: 'core',
